@@ -1,1 +1,11 @@
-Flask
+numpy
+pandas
+python-dotenv
+mysql-connector-python
+pymysql
+scikit-learn
+seaborn
+catboost
+xgboost
+mlflow
+#-e .

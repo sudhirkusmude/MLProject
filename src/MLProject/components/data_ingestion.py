@@ -24,7 +24,9 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         try:
             ##reading the data from mysql
-            df=read_sql_data()
+            # df=read_sql_data()   # this is only for one time at data ingestion , now we just took the raw.csv file from local,
+            # we are not reading again from sql
+            df=pd.read_csv(os.path.join('notebook/data','raw.csv'))
             logging.info("Reading completed mysql database")
 
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)

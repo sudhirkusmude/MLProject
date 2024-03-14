@@ -1,4 +1,4 @@
-mport sys
+import sys
 from dataclasses import dataclass
 
 import numpy as np
@@ -8,10 +8,10 @@ from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 
-from src.mlproject.utils import save_object
+from src.MLProject.utils import save_object
 
-from src.mlproject.exception import CustomException
-from src.mlproject.logger import logging
+from src.MLProject.exception import CustomException
+from src.MLProject.logger import logging
 import os
 
 

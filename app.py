@@ -4,7 +4,7 @@ from src.MLProject.components.data_ingestion import DataIngestion
 from src.MLProject.components.data_ingestion import DataIngestionConfig
 from src.MLProject.components.data_transformation import DataTransformationConfig,DataTransformation
 from src.MLProject.components.model_trainer import ModelTrainer,ModelTrainerConfig
-
+from sklearn.model_selection import train_test_split
 
 import sys
 
